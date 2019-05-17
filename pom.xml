@@ -157,11 +157,11 @@
                         </goals>
                         <configuration>
                             <publisher>
-                                <contextUrl>https://artifactory.netifiinc.com/artifactory</contextUrl>
-                                <username>${env.ORG_GRADLE_PROJECT_netifiArtifactoryUsername}</username>
-                                <password>${env.ORG_GRADLE_PROJECT_netifiArtifactoryPassword}</password>
-                                <repoKey>libs-release-local</repoKey>
-                                <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+                                <contextUrl>https://sonatype.netifiinc.com/repository</contextUrl>
+                                <username>${env.ORG_GRADLE_PROJECT_netifiPublishUsername}</username>
+                                <password>${env.ORG_GRADLE_PROJECT_netifiPublishPassword}</password>
+                                <repoKey>netifi-maven-releases</repoKey>
+                                <snapshotRepoKey>netifi-maven-snapshots</snapshotRepoKey>
                             </publisher>
                         </configuration>
                     </execution>
